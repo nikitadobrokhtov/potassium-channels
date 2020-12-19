@@ -1,0 +1,100 @@
+color grey20, all
+select rERG1_resid, resid 584 & rERG1_aligned
+select rERG2_resid, resid 432+442+447 & rERG2_aligned
+select rERG3_resid, resid 593 & rERG3_aligned
+select hERG2_resid, resid 425+427+429-433+438+439+442+444+447+450+452-455+459+460+491 & hERG2_aligned
+select hERG3_resid, resid 576+578+580-584+589+590+593+598+601+603-606 & hERG3_aligned
+
+show sticks, *ERG*_resid & ! name c+n+o
+
+color cyan, hERG2_resid & ! name c+n+o+ca
+color pink, hERG3_resid & ! name c+n+o+ca
+color red, rERG1_resid & ! name c+n+o+ca
+color yellow, rERG2_resid & ! name c+n+o+ca
+color white, rERG3_resid & ! name c+n+o+ca
+
+select for_rERG1, resid 1582+2582+3582+4582
+select for_rERG2, resid 1581+1591+1596+2581+2591+2596+3581+3591+3596+4581+4591+4596
+select for_rERG3, resid 1591+2591+3591+4591
+select for_hERG2, resid 1574+1576+1578-1582+1587+1588+1591+1593+1596+1599+1601-1603+1607+1608+1639+2574+2576+2578-2582+2587+2588+2591+2593+2596+2599+2601-2603+2607+2608+2639+3574+3576+3578-3582+3587+3588+3591+3593+3596+3599+3601-3603+3607+3608+3639+4574+4576+4578-4582+4587+4588+4591+4593+4596+4599+4601-4603+4607+4608+4639
+select for_hERG3, resid 1574+1576+1578-1582+1587+1588+1591+1596+1599+1601-1603+2574+2576+2578-2582+2587+2588+2591+2596+2599+2601-2603+3574+3576+3578-3582+3587+3588+3591+3596+3599+3601-3603+4574+4576+4578-4582+4587+4588+4591+4596+4599+4601-4603
+
+
+
+
+show sticks, for_rERG1 & ! name c+n+o; color green, for_rERG1 & ! name c+n+o+ca
+scene F1, store
+hide sticks, hERG1_structure
+
+show sticks, for_rERG2 & ! name c+n+o; color green, for_rERG2 & ! name c+n+o+ca
+scene F2, store
+hide sticks, hERG1_structure
+
+show sticks, for_rERG3 & ! name c+n+o; color green, for_rERG3 & ! name c+n+o+ca
+scene F3, store
+hide sticks, hERG1_structure
+
+show sticks, for_hERG2 & ! name c+n+o; color green, for_hERG2 & ! name c+n+o+ca
+scene F4, store
+hide sticks, hERG1_structure
+
+show sticks, for_hERG3 & ! name c+n+o; color green, for_hERG3 & ! name c+n+o+ca
+scene F5, store
+hide sticks, hERG1_structure
+
+
+CORRECTED COMMANDS!
+
+color grey20, all & ! new_ligand
+
+select hERG2_resid, resid 425+427+429-433+438+439+442+444+447+450+452-455+459+460+491 & hERG2_aligned
+select hERG3_resid, resid 576+578+580-584+589+590+593+598+601+603-606 & hERG3_aligned
+select rERG1_resid, resid 584 & rERG1_aligned
+select rERG2_resid, resid 432+442+447 & rERG2_aligned
+select rERG3_resid, resid 593 & rERG3_aligned
+
+select hERG1_hERG2_comparison, resid 1574+1576+1578-1582+1587+1588+1591+1593+1596+1599+1601-1603+1607+1608+1639+2574+2576+2578-2582+2587+2588+2591+2593+2596+2599+2601-2603+2607+2608+2639+3574+3576+3578-3582+3587+3588+3591+3593+3596+3599+3601-3603+3607+3608+3639+4574+4576+4578-4582+4587+4588+4591+4593+4596+4599+4601-4603+4607+4608+4639
+select hERG1_hERG3_comparison, resid 1574+1576+1578-1582+1587+1588+1591+1596+1599+1601-1603+2574+2576+2578-2582+2587+2588+2591+2596+2599+2601-2603+3574+3576+3578-3582+3587+3588+3591+3596+3599+3601-3603+4574+4576+4578-4582+4587+4588+4591+4596+4599+4601-4603
+select hERG1_rERG1_comparison, resid 1582+2582+3582+4582
+select hERG2_rERG2_comparison, resid 432+442+447 & hERG2_aligned
+select hERG3_rERG3_comparison, resid 593 & hERG3_aligned
+
+show sticks, hERG2_resid & ! name c+n+o; show sticks, hERG1_hERG2_comparison & ! name c+n+o; color cyan, hERG2_resid & ! name c+n+o+ca; color green, hERG1_hERG2_comparison  & ! name c+n+o+ca
+scene F1, store
+hide sticks, all; color grey20, all & ! new_ligand
+
+show sticks, hERG3_resid & ! name c+n+o; show sticks, hERG1_hERG3_comparison & ! name c+n+o; color red, hERG3_resid & ! name c+n+o+ca; color green, hERG1_hERG3_comparison  & ! name c+n+o+ca
+scene F2, store
+hide sticks, all; color grey20, all & ! new_ligand
+
+show sticks, rERG1_resid & ! name c+n+o; show sticks, hERG1_rERG1_comparison & ! name c+n+o; color yellow, rERG1_resid & ! name c+n+o+ca; color green, hERG1_rERG1_comparison  & ! name c+n+o+ca
+scene F3, store
+hide sticks, all; color grey20, all & ! new_ligand
+
+show sticks, rERG2_resid & ! name c+n+o; show sticks, hERG2_rERG2_comparison & ! name c+n+o; color pink, rERG2_resid & ! name c+n+o+ca; color cyan, hERG2_rERG2_comparison  & ! name c+n+o+ca
+scene F4, store
+hide sticks, all; color grey20, all & ! new_ligand
+
+show sticks, rERG3_resid & ! name c+n+o; show sticks, hERG3_rERG3_comparison & ! name c+n+o; color white, rERG3_resid & ! name c+n+o+ca; color red, hERG3_rERG3_comparison  & ! name c+n+o+ca
+scene F5, store
+hide sticks, all; color grey20, all & ! new_ligand
+
+select hERG2_for_hERG3_comparison, resid 431+432+442+444+450+453+454+459+460+491 & hERG2_aligned
+select hERG3_for_hERG2_comparison, resid 582+583+593+595+601+604+605+610+611+626 & hERG3_aligned
+show sticks, hERG2_for_hERG3_comparison & ! name c+n+o; show sticks, hERG3_for_hERG2_comparison & ! name c+n+o
+color red, hERG3_for_hERG2_comparison & ! name c+n+o+ca; color cyan, hERG2_for_hERG3_comparison & ! name c+n+o+ca
+scene F6, store
+hide sticks, all; color grey20, all & ! new_ligand
+
+
+
+
+
+
+
+
+
+
+
+
+
