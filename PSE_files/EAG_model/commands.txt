@@ -1,0 +1,7 @@
+select plus_charge_in_EAG, resid 384+387+412+419+450 & EAG_structure; color orange, plus_charge_in_EAG & ! name c+n+o+ca; show sticks, plus_charge_in_EAG
+
+select minus_charge_in_EAG, resid 377+381+382+398+414+447+449 & EAG_structure; color blue, minus_charge_in_EAG & ! name c+n+o+ca; show sticks, minus_charge_in_EAG
+
+select plus_charge_in_hERG1, resid 582+608+610+638 & hERG1_structure; color orange, plus_charge_in_hERG1 & ! name c+n+o+ca; show sticks, plus_charge_in_hERG1
+
+select minus_charge_in_hERG1, resid 575+580+590+591+609+637 & hERG1_structure; color blue, minus_charge_in_hERG1 & ! name c+n+o+ca; show sticks, minus_charge_in_hERG1
