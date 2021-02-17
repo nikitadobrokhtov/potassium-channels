@@ -5,3 +5,7 @@ select minus_charge_in_EAG, resid 377+381+382+398+414+447+449 & EAG_structure; c
 select plus_charge_in_hERG1, resid 582+608+610+638 & hERG1_structure; color orange, plus_charge_in_hERG1 & ! name c+n+o+ca; show sticks, plus_charge_in_hERG1
 
 select minus_charge_in_hERG1, resid 575+580+590+591+609+637 & hERG1_structure; color blue, minus_charge_in_hERG1 & ! name c+n+o+ca; show sticks, minus_charge_in_hERG1
+
+select minus_charge_in_ligand, resid 1004+1009+1034; color blue, minus_charge_in_ligand & ! name c+n+o+ca; show sticks, minus_charge_in_ligand
+
+select plus_charge_in_ligand, resid 1001+1006+1018+1020+1023+1027; color orange, plus_charge_in_ligand & ! name c+n+o+ca; show sticks, plus_charge_in_ligand
