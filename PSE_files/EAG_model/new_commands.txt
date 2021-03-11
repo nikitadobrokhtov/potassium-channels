@@ -1,0 +1,2 @@
+select EAG_dist, EAG_structure within 5.0 of ligand
+select hERG1_dist, hERG1_structure within 5.0 of ligand
