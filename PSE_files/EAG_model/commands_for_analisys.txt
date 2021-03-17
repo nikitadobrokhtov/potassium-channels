@@ -1,0 +1,34 @@
+select ARGs_on_ligand, resid 1020+1027
+show sticks, ARGs_on_ligand
+color cyan, ARGs_on_ligand & ! name c+n+o+ca
+select EAG_388_394, resid 398-394 & EAG_structure
+show sticks, EAG_388_394
+color orange, EAG_388_394 & ! name c+n+o+ca
+scene F1, store
+
+select PHE36_ligand, resid 1036
+show sticks, PHE36_ligand
+color cyan, PHE36_ligand & ! name c+n+o+ca
+select EAG_394, resid 394 & EAG_structure
+show sticks, EAG_394
+color orange, EAG_394 & ! name c+n+o+ca
+scene F2, store
+
+select GLU9_SER10_ligand, resid 1009+1010
+show sticks, GLU9_SER10_ligand
+color cyan, GLU9_SER10_ligand & ! name c+n+o+ca
+select EAG_395_399, resid 395-399 & EAG_structure
+show sticks, EAG_395_399
+color orange, EAG_395_399 & ! name c+n+o+ca
+scene F3, store
+
+select EAG_439_444, resid 439-444 & EAG_structure
+show sticks, EAG_439_444
+color white, EAG_439_444 & ! name c+n+o+ca
+select THR24_ASN25_ligand, resid 1024+1025
+show sticks, THR24_ASN25_ligand
+color cyan, THR24_ASN25_ligand & ! name c+n+o+ca
+scene F4, store
+
+
+
