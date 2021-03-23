@@ -30,5 +30,12 @@ show sticks, THR24_ASN25_ligand
 color cyan, THR24_ASN25_ligand & ! name c+n+o+ca
 scene F4, store
 
+select CYS_ligand, resid 1007+1013+1017+1028+1033+1035
+show sticks, CYS_ligand & ! name c+n+o
+color yellow, CYS_ligand & ! name c+n+o+ca
+show sticks, resid_for_removal & ! name c+n+o
+color cyan, resid_for_removal & ! name c+n+o+ca
+scene F5, store
+
 
 

@@ -1,0 +1,7 @@
+select EAG_pore_domain, resid 348-484 & 5k7l_cut_B_chain_full
+select hERG1_pore_domain, resid 546-669 & 5va1_full
+[alignment EAG_pore_domain to hERG1_pore_domain]
+show surface, 5va1_full
+set surface_color, cyan, 5va1_full
+show surface, 5k7l_cut_B_chain_full
+set surface_color, green, 5k7l_cut_B_chain_full, 
