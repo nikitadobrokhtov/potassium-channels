@@ -1,7 +1,7 @@
 select ARGs_on_ligand, resid 1020+1027
 show sticks, ARGs_on_ligand
 color cyan, ARGs_on_ligand & ! name c+n+o+ca
-select EAG_388_394, resid 398-394 & EAG_structure
+select EAG_388_394, resid 388-394 & EAG_structure
 show sticks, EAG_388_394
 color orange, EAG_388_394 & ! name c+n+o+ca
 scene F1, store
