@@ -1,0 +1,44 @@
+color grey20, all
+select EAG_pore_domain, resid 348-484 & EAG_structure
+select hERG1_pore_domain, resid 546-669 & hERG1_structure
+
+color deepsalmon, ligand; color red, hERG1_pore_domain; color green, EAG_pore_domain; hide sticks, all
+
+select ARGs_on_ligand, resid 1020+1027; color cyan, ARGs_on_ligand & ! name c+n+o+ca; show sticks, ARGs_on_ligand & ! name c+n+o
+select EAG_388_394, resid 388-394 & EAG_structure; show sticks, EAG_388_394 & ! name c+n+o; color orange, EAG_388_394 & ! name c+n+o+ca
+select hERG_582_588, resid 582-588 & hERG1_structure; show sticks, hERG_582_588 & ! name c+n+o; color orange, hERG_582_588 & ! name c+n+o+ca 
+scene F1, store
+
+color deepsalmon, ligand; color red, hERG1_pore_domain; color green, EAG_pore_domain; hide sticks, all
+select PHE36_ligand, resid 1036; show sticks, PHE36_ligand; color cyan, PHE36_ligand & ! name n+o
+select EAG_394_and_398, resid 394+398 & EAG_structure; show sticks, EAG_394_and_398 & ! name c+n+o; color orange, EAG_394_and_398 & ! name c+n+o+ca;
+select hERG_588_and_591, resid 588+591 & hERG1_structure;  show sticks, hERG_588_and_591 & ! name c+n+o; color orange, hERG_588_and_591 & ! name c+n+o+ca;
+scene F2, store
+
+color deepsalmon, ligand; color red, hERG1_pore_domain; color green, EAG_pore_domain; hide sticks, all
+show sticks, ligand & ! name c+n+o
+select PHE14_ligand, resid 1014; show sticks, PHE14_ligand; color cyan, PHE14_ligand & ! name ca+n+o
+select EAG_394_and_397, resid 394+397 & EAG_structure; show sticks, EAG_394_and_397 & ! name c+n+o; color orange, EAG_394_and_397 & ! name c+n+o+ca;
+show sticks, hERG_588_and_591 & ! name c+n+o; color orange, hERG_588_and_591 & ! name c+n+o+ca;
+color cyan, ARGs_on_ligand & ! name ca+c+n+o
+scene F3, store
+
+color deepsalmon, ligand; color red, hERG1_pore_domain; color green, EAG_pore_domain; hide sticks, all
+select TYR11_ligand, resid 1011; show sticks, TYR11_ligand & ! name c+n+o; color cyan, TYR11_ligand & ! name ca+n+o
+select EAG_388, resid 388 & EAG_structure; show sticks, EAG_388 & ! name c+n+o; color orange, EAG_388 & ! name c+n+o+ca;
+select ARG582, resid 582 & hERG1_structure; show sticks, ARG582 & ! name c+n+o; color orange, ARG582 & ! name ca+c+n+o
+scene F4, store
+
+color deepsalmon, ligand; color red, hERG1_pore_domain; color green, EAG_pore_domain; hide sticks, all
+select GLU9_SER10_ligand, resid 1009+1010; show sticks, GLU9_SER10_ligand & ! name c+n+o; color cyan, GLU9_SER10_ligand & ! name c+n+o+ca
+select EAG_388_and_395_399, resid 388+395-399 & EAG_structure; show sticks, EAG_388_and_395_399 & ! name c+n+o; color orange, EAG_388_and_395_399 & ! name c+n+o+ca
+select hERG_582_and_591, resid 582+591 & hERG1_structure; show sticks, hERG_582_and_591 & ! name c+n+o; color orange, hERG_582_and_591 & ! name c+n+o+ca
+scene F5, store
+
+color deepsalmon, ligand; color red, hERG1_pore_domain; color green, EAG_pore_domain; hide sticks, all
+select THR24_ASN25_ligand, resid 1024+1025; show sticks, THR24_ASN25_ligand & ! name c+n+o; color cyan, THR24_ASN25_ligand & ! name ca+c+n+o
+select EAG_439_444, resid 439-444 & EAG_structure; show sticks, EAG_439_444 & ! name c+n+o; color orange, EAG_439_444 & ! name ca+c+n+o
+select hERG_627_632, resid 627-632 & hERG1_structure; show sticks, hERG_627_632 & ! name c+n+o; color orange, hERG_627_632 & ! name ca+c+n+o
+scene F6, store
+
+
