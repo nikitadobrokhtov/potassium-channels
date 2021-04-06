@@ -5,8 +5,8 @@ select hERG1_pore_domain, resid 546-669 & hERG1_structure
 color deepsalmon, ligand; color red, hERG1_pore_domain; color green, EAG_pore_domain; hide sticks, all
 
 select ARGs_on_ligand, resid 1020+1027; color cyan, ARGs_on_ligand & ! name c+n+o+ca; show sticks, ARGs_on_ligand & ! name c+n+o
-select EAG_388_394, resid 388-394 & EAG_structure; show sticks, EAG_388_394 & ! name c+n+o; color orange, EAG_388_394 & ! name c+n+o+ca
-select hERG_582_588, resid 582-588 & hERG1_structure; show sticks, hERG_582_588 & ! name c+n+o; color orange, hERG_582_588 & ! name c+n+o+ca 
+select EAG_388_394, resid 388+390+393+394 & EAG_structure; show sticks, EAG_388_394 & ! name c+n+o; color orange, EAG_388_394 & ! name c+n+o+ca
+select hERG_582_592, resid 582+587+591+592 & hERG1_structure; show sticks, hERG_582_592 & ! name c+n+o; color orange, hERG_582_592 & ! name c+n+o+ca 
 scene F1, store
 
 color deepsalmon, ligand; color red, hERG1_pore_domain; color green, EAG_pore_domain; hide sticks, all
