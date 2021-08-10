@@ -1,0 +1,19 @@
+color grey20, EAG_structure; color red, EAG_structure & resid 350-450
+show sticks, resid 387-400+432-444 & ! name c+n+o & EAG_structure
+color orange, resid 387-400+432-444 & ! name ca+c+n+o & EAG_structure
+
+show sticks, BeKm-1_ARG20_LYS & resid 1020 & ! name c+n+o
+color white, BeKm-1_ARG20_LYS & resid 1020 & ! name ca+c+n+o
+scene F1, store
+
+show sticks, BeKm-1_ARG27_LYS & resid 1027 & ! name c+n+o
+color white, BeKm-1_ARG27_LYS & resid 1027 & ! name ca+c+n+o
+scene F2, store
+
+show sticks, BeKm-1_LYS36_new & resid 36 & ! name c+n+o
+color white, BeKm-1_LYS36_new & resid 36 & ! name ca+c+n+o
+scene F3, store
+
+show sticks, BeKm-1_PHE14-SER_ARG20-LYS_ARG27-LYS_PHE36-LYS & resid 1014+1020+1027+1036 & ! name c+n+o
+color white, BeKm-1_PHE14-SER_ARG20-LYS_ARG27-LYS_PHE36-LYS & resid 1014+1020+1027+1036 & ! name ca+c+n+o
+scene F4, store
